@@ -1,0 +1,21 @@
+Avant on listait les struct entre elles avec dans chaque struct un pointeur vers la
+struct suivantes.
+
+Maintenant on utilise les struct list_head :
+Les struct list_head sont reliées entre elles.
+Dans chaque struct élément, on va rajouter une struct list_head qui va se charger  de relier les struct éléments entre elles.
+Dans commit.h, la struct list_head est un élément de la struct et non un pointeur.
+En effet, ce mécanisme nous permettra de récuperer la struct contenant la list.
+Pour acceder à la struct élément on utilise container_of.
+Ce qui permet de généraliser un mode de chainage indépendant de la struct utilisé.
+Comme une vrai chaine matériel avec des crochets mis dessus (chaine indépendant descrochets) et chaque crochet peut contenir des objets différents.
+Il faut tout de même le voir comme une liste chainé classique.
+
+Question 2 :
+
+INIT_LIST_HEAD : Initialise une list_head list, next et prev pointent sur list. 
+list_add : Alonge la list chainé, ajoute une nouvelle struct list au début.
+list_del : Enleve une list du chainage, son next et prev pointent vers listPOISON.
+
+
+
