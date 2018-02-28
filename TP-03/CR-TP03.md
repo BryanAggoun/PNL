@@ -1,7 +1,9 @@
+AGGOUN Bryan
+
 Compte-rendu TP03 PNL :
 ========================
 
-##Exercice 1 :
+## Exercice 1 :
 
 Lors du premier lancement de la commande 
 > qemu-system-x86_64 -hda pnl-tp.img
@@ -9,7 +11,7 @@ le système n'a pas pu lancer correctement la distribution linux en raison de co
 
 Après l'ajout d'un autre disque dans `/root` et la génération d'une image personnelle dans `/home`, le script de lancement _qemu-run.sh_ à correctement fonctionner.
 
-##Exercice 2 :
+## Exercice 2 :
 
 __Question 1 :__
 
@@ -33,7 +35,7 @@ __Question 6 :__
 
 Lorsque l'on affiche la liste des modules chargés on se rend compte qu'il n'y en a aucun. Ce qui semble logique car dans la configuration de notre noyau, l'option _Module unloading_ est coché. 
 
-##Exercice 3 :
+## Exercice 3 :
 
 __Question 1 :__
 
@@ -65,7 +67,7 @@ __Question 6 :__
 Pour lancer le script original _init_ depuis notre shell, on peut utiliser la commande 
 > exec init
 
-##Exercice 4 :
+## Exercice 4 :
 
 __Question 1 :__
 
